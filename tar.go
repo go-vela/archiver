@@ -24,6 +24,9 @@ type Tar struct {
 	// to create a tar archive in the desired path.
 	MkdirAll bool
 
+	// Whether to preserve the file path in the archive
+	PreservePath bool
+
 	// A single top-level folder can be implicitly
 	// created by the Archive or Unarchive methods
 	// if the files to be added to the archive
@@ -307,6 +310,10 @@ func (t *Tar) writeWalk(source, topLevelFolder, destination string) error {
 		}
 		if within(fpathAbs, destAbs) {
 			return nil
+		}
+
+		if t.PreservePath {
+			topLevelFolder = filepath.Dir(source)
 		}
 
 		// build the name to be used within the archive
