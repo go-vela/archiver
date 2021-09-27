@@ -52,7 +52,7 @@ Tar files can optionally be compressed using any of the above compression format
 
 ## GoDoc
 
-See <https://pkg.go.dev/github.com/mholt/archiver/v3>
+See <https://pkg.go.dev/github.com/go-vela/archiver/v3>
 
 ## Install
 
@@ -205,11 +205,11 @@ The archiver package allows you to easily create and open archives, walk their c
 To use as a dependency in your project:
 
 ```bash
-go get github.com/mholt/archiver/v3
+go get github.com/go-vela/archiver/v3
 ```
 
 ```go
-import "github.com/mholt/archiver/v3"
+import "github.com/go-vela/archiver/v3"
 ```
 
 [See the package's GoDoc](https://pkg.go.dev/github.com/mholt/archiver?tab=doc) for full API documentation.
