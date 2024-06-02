@@ -11,10 +11,10 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     container:
-      image: golang:1.16
+      image: golang:1.22@sha256:f43c6f049f04cbbaeb28f0aad3eea15274a7d0a7899a617d0037aec48d7ab010
     steps:
     - name: clone
-      uses: actions/checkout@v2
+      uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2
 
     - name: validate
       run: |
