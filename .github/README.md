@@ -1,6 +1,10 @@
 # archiver
 
-> WARNING: This is a publicly maintained fork of the original upstream https://github.com/mholt/archiver.
+> [!WARNING]
+> This repo has been archived and should not be used.
+
+> [!NOTE]
+> This was a publicly maintained fork of the original upstream https://github.com/mholt/archiver.
 
 [![license](https://img.shields.io/crates/l/gl.svg)](../LICENSE)
 [![GoDoc](https://godoc.org/github.com/go-vela/archiver?status.svg)](https://godoc.org/github.com/go-vela/archiver)
